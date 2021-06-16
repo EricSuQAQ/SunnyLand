@@ -24,7 +24,7 @@ All materials of this game are from the network and free materials of unity stor
 
 Key transform for people who can not read Chinese:
 
-"开始游戏" - "play"
-"修改键位" - "change the key"
-"规则介绍" - "explain the rule"
+"开始游戏" - "play";
+"修改键位" - "change the key";
+"规则介绍" - "explain the rule";
 "退出游戏" - "quit"
