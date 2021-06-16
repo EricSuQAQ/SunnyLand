@@ -20,3 +20,11 @@ Click on "SunnyLand.exe" to play the game.
 If you want to check the Code and Unity Setting, please check other folder.
 
 All materials of this game are from the network and free materials of unity store, strictly prohibited for commercial purposes.
+
+
+Key transform for people who can not read Chinese:
+
+"开始游戏" - "play"
+"修改键位" - "change the key"
+"规则介绍" - "explain the rule"
+"退出游戏" - "quit"
