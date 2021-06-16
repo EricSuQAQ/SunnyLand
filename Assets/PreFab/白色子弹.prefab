@@ -214,6 +214,7 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 256
+  upSpeed: 0
 --- !u!50 &764649828659496349
 Rigidbody2D:
   serializedVersion: 4

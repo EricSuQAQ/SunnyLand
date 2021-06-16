@@ -21,9 +21,10 @@ public class cherry : MonoBehaviour
         GameObject music = GameObject.Find("游戏主控");
         music.SendMessage("collectAudio");
     }
+
     public void cherryGot()
     {
-        FindObjectOfType<playerControl>().cherryCountAdd();
+        FindObjectOfType<ScoreCauculator>().cherryAccumulate();
         Destroy(this.gameObject);
     }
 }

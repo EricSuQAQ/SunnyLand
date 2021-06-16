@@ -11,6 +11,7 @@ public class enterHouse : MonoBehaviour
     public Image black;
     public bool permission; 
     // Start is called before the first frame update
+
     void Start()
     {
         dialog.SetActive(false);
@@ -20,12 +21,11 @@ public class enterHouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(FindObjectOfType<playerControl>().cherry == 10)
+        if(FindObjectOfType<ScoreCauculator>().cherryCount == 10)
         {
             permission = true;
             enterText.text = "按E键进入下一关";
-            enterText.fontSize = 20;
-            
+            enterText.fontSize = 20; 
         }
         if(Input.GetKeyDown(KeyCode.E) && dialog.activeInHierarchy == true && permission == true) //按下E，同时dialog被激活
         {
@@ -40,7 +40,19 @@ public class enterHouse : MonoBehaviour
 
     private void nextCheckPoint()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if(PlayerPrefs.GetString("mode") == "all")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            GameObject mainControl = GameObject.Find("游戏主控");
+            mainControl.SendMessage("CoverCurrentTime");
+        }
+        else
+        {
+            SceneManager.LoadScene(3);
+            GameObject mainControl = GameObject.Find("游戏主控");
+            mainControl.SendMessage("CoverCurrentTime");
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)

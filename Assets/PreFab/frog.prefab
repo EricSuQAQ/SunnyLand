@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36475824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.34, y: -7.02, z: 0}
+  m_LocalPosition: {x: -2.83, y: -3.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4755108035309871114}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702199957}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.68, y: -6.98, z: 0}
+  m_LocalPosition: {x: 3.53, y: -3.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4755108035309871114}
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: -8984314336313219811}
   - component: {fileID: 602258477}
   - component: {fileID: 7389011120050531186}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: frog
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 729012517
   m_SortingLayer: 5
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 86ca59b9bca0e409b9ba2784fbe69f01, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -217,6 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isHurt: 0
+  hp: 0
   ground:
     serializedVersion: 2
     m_Bits: 256
@@ -224,6 +225,8 @@ MonoBehaviour:
   rightPoint: {fileID: 1702199958}
   speed: 1
   jumpForce: 6
+  redBullet: {fileID: 4083129026397826397, guid: b1804dd463f78ef43999f687f9dc3ab6,
+    type: 3}
 --- !u!82 &7389011120050531186
 AudioSource:
   m_ObjectHideFlags: 0

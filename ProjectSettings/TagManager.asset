@@ -8,6 +8,8 @@ TagManager:
   - enemy
   - deadline
   - grond
+  - enemyBullet
+  - blackHole
   layers:
   - Default
   - TransparentFX
@@ -22,7 +24,7 @@ TagManager:
   - background
   - frontground
   - player
-  - 
+  - axe
   - 
   - 
   - 

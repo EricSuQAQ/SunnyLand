@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2985372087745116867}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: bottomPoint
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 2985372088527813565}
   - component: {fileID: 2985372088527813567}
   - component: {fileID: 7118753227115604304}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: eagle
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 7
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -187,12 +187,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isHurt: 0
+  hp: 0
   ground:
     serializedVersion: 2
     m_Bits: 256
   topPoint: {fileID: 2985372088661936187}
   bottomPoint: {fileID: 2985372087745116867}
   speed: 1
+  fireBall: {fileID: 2786983320459967724, guid: a206ac05c49d6cd429a140cb82af74f2,
+    type: 3}
 --- !u!82 &7118753227115604304
 AudioSource:
   m_ObjectHideFlags: 0
@@ -298,7 +301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2985372088661936187}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: topPoint
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
